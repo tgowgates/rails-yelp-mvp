@@ -1,0 +1,23 @@
+
+<h1>Restaurants#new</h1>
+<p>Find me in app/views/restaurants/new.html.erb</p>
+
+<div class="form-container">
+  <%= simple_form_for @restaurant do |f| %>
+    <div class="form-group">
+      <%= f.input :name, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+     <%= f.input :address, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+     <%= f.input :category, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+     <%= f.input :phone_number, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "add restaurant", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>

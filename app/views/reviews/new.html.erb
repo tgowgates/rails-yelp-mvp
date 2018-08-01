@@ -1,0 +1,15 @@
+<h1>Review#new</h1>
+
+<div class="form-container">
+  <%= simple_form_for [@restaurant, @review] do |f| %>
+    <div class="form-group">
+      <%= f.input :content, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+     <%= f.input :rating, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.submit "add review", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
